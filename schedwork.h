@@ -8,6 +8,7 @@
 // type for the ID of a worker
 typedef unsigned int Worker_T;
 // n-by-k Matrix of each of the k workers' availability over an n-day period
+
 typedef std::vector<std::vector<bool>> AvailabilityMatrix;
 
 // n-by-d matrix with the d worker IDs who are scheduled 
@@ -31,6 +32,7 @@ typedef std::vector<std::vector<Worker_T> > DailySchedule;
  * @return true if a solution exists; sched contains the solution
  * @return false if no solution exists; sched is undefined (can be anything)
  */
+
 bool schedule(
     const AvailabilityMatrix& avail,
     const size_t dailyNeed,

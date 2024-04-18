@@ -22,4 +22,7 @@ std::set<std::string> wordle(
     const std::string& floating,
     const std::set<std::string>& dict);
 
+bool combos(std::string& in, unsigned int idx, std::string floating, const std::set<std::string>& dict, std::set<std::string>& results);
+
+
 #endif
